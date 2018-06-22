@@ -58,16 +58,16 @@ for i in range(20):
 # TODO: Crie uma função para adicionar as colunas(features) de uma lista em outra lista, na mesma ordem
 
 def column_to_list(data, index):
-# def column_to_list(data: list, index: int) -> list:
-"""
-Função para obter uma coluna de uma lista obtida a partir de um csv.
-Argumentos:
-  data: A lista obtida a partir de um arquivo csv.
-  index: O índice da coluna desejada.
-Retorna:
-  Uma lista contendo os valores da coluna selecionada.
+	# def column_to_list(data: list, index: int) -> list:
+	"""
+	Função para obter uma coluna de uma lista obtida a partir de um csv.
+	Argumentos:
+	  data: A lista obtida a partir de um arquivo csv.
+	  index: O índice da coluna desejada.
+	Retorna:
+	  Uma lista contendo os valores da coluna selecionada.
 
-"""
+	"""
 	column_list = []
 	# Dica: Você pode usar um for para iterar sobre as amostras, pegar a feature pelo seu índice, e dar append para uma lista
 	for i in range(len(data)):
@@ -114,15 +114,15 @@ assert male == 935854 and female == 298784, "TAREFA 4: A conta não bate."
 # TODO: Crie uma função para contar os gêneros. Retorne uma lista.
 # Isso deveria retornar uma lista com [count_male, count_female] (exemplo: [10, 15] significa 10 Masculinos, 15 Femininos)
 def count_gender(data_list):
-# def count_gender(data_list: list) -> list:
-"""
-Função para obter a contagem de gêneros do arquivo chicago.csv
-Argumentos:
-  data_list: A lista de dados obtida a partir do arquivo chicago.csv.
-Retorna:
-  Uma lista [count_male, count_female] contendo as contagens de "Male" e "Female" no arquivo.
+	# def count_gender(data_list: list) -> list:
+	"""
+	Função para obter a contagem de gêneros do arquivo chicago.csv
+	Argumentos:
+	  data_list: A lista de dados obtida a partir do arquivo chicago.csv.
+	Retorna:
+	  Uma lista [count_male, count_female] contendo as contagens de "Male" e "Female" no arquivo.
 
-"""
+	"""
 	male = 0
 	female = 0
 	
@@ -150,15 +150,15 @@ assert count_gender(data_list)[0] == 935854 and count_gender(data_list)[1] == 29
 # TODO: Crie uma função que pegue o gênero mais popular, e retorne este gênero como uma string.
 # Esperamos ver "Masculino", "Feminino", ou "Igual" como resposta.
 def most_popular_gender(data_list):
-# def most_popular_gender(data_list: list) -> str:
-"""
-Função para obter o gênero mais popular do arquivo chicago.csv.
-Argumentos:
-  data_list: A lista de dados obtida a partir de chicago.csv.
-Retorna:
-  Uma string sinalizando o gênero mais popular.
+	# def most_popular_gender(data_list: list) -> str:
+	"""
+	Função para obter o gênero mais popular do arquivo chicago.csv.
+	Argumentos:
+	  data_list: A lista de dados obtida a partir de chicago.csv.
+	Retorna:
+	  Uma string sinalizando o gênero mais popular.
 
-"""
+	"""
 	[count_male, count_female] = count_gender(data_list);
 
 	if(count_male > count_female):
@@ -193,16 +193,16 @@ plt.show(block=True)
 print("\nTAREFA 7: Verifique o gráfico!")
 
 def count_user_types(data_list):
-# def count_user_types(data_list: list) -> list:
-"""
-Função para obter a contagem de tipos de usuário do arquivo chicago.csv
-Argumentos:
-  data_list: A lista de dados obtida a partir do arquivo chicago.csv.
-Retorna:
-  Uma lista [count_customer, count_subscriber, count_dependent] contendo as contagens.
+	# def count_user_types(data_list: list) -> list:
+	"""
+	Função para obter a contagem de tipos de usuário do arquivo chicago.csv
+	Argumentos:
+	  data_list: A lista de dados obtida a partir do arquivo chicago.csv.
+	Retorna:
+	  Uma lista [count_customer, count_subscriber, count_dependent] contendo as contagens.
 
 
-"""
+	"""
 	customer = 0
 	subscriber = 0
 	dependent = 0
