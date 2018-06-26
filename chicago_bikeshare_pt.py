@@ -276,7 +276,7 @@ mean_trip /= len(trip_duration_list)
 
 # checar se posso usar sort...
 trip_duration_list.sort()
-median_trip = trip_duration_list[len(trip_duration_list)//2]
+median_trip = trip_duration_list[int(len(trip_duration_list)//2)]
 
 print("\nTAREFA 9: Imprimindo o mínimo, máximo, média, e mediana")
 print("Min: ", min_trip, "Max: ", max_trip, "Média: ", mean_trip, "Mediana: ", median_trip)
